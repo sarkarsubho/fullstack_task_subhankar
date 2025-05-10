@@ -1,5 +1,5 @@
 import express from 'express';
-import { getAllTasks } from '../services/redisService';
+import { getAllTasks } from '../services/redisService.js';
 
 const router = express.Router();
 

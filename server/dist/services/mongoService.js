@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { MONGO_URI } from '../const/config';
-import { Task } from '../models/task.model';
+import { MONGO_URI } from '../const/config.js';
+import { Task } from '../models/task.model.js';
 export async function connectMongo() {
     await mongoose.connect(MONGO_URI);
     console.log('MongoDB connected');

@@ -1,6 +1,6 @@
 import { createClient } from "redis";
-import { addTasksToMongo } from "./mongoService";
-import { REDIS_KEY, url } from "../const/config";
+import { addTasksToMongo } from "./mongoService.js";
+import { REDIS_KEY, url } from "../const/config.js";
 let redisClient;
 export const connectRedis = () => {
     redisClient = createClient({

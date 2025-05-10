@@ -1,6 +1,6 @@
 import { Server } from "socket.io";
-import { addTaskToRedis, checkAndMigrateTasks } from "./services/redisService";
-import { socketKeys } from "./const/config";
+import { addTaskToRedis, checkAndMigrateTasks } from "./services/redisService.js";
+import { socketKeys } from "./const/config.js";
 
 export function initSocket(io: Server) {
   io.on("connection", (socket) => {

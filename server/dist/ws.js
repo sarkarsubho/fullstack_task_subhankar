@@ -1,5 +1,5 @@
-import { addTaskToRedis, checkAndMigrateTasks } from "./services/redisService";
-import { socketKeys } from "./const/config";
+import { addTaskToRedis, checkAndMigrateTasks } from "./services/redisService.js";
+import { socketKeys } from "./const/config.js";
 export function initSocket(io) {
     io.on("connection", (socket) => {
         console.log("New client connected");

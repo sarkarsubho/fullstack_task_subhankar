@@ -3,10 +3,10 @@ import http from "http";
 import { Server } from "socket.io";
 import cors from "cors";
 import dotenv from "dotenv";
-import taskRoutes from "./routes/taskRoute";
-import { initSocket } from "./ws";
-import { connectMongo } from "./services/mongoService";
-import { connectRedis } from "./services/redisService";
+import taskRoutes from "./routes/taskRoute.js";
+import { initSocket } from "./ws.js";
+import { connectMongo } from "./services/mongoService.js";
+import { connectRedis } from "./services/redisService.js";
 
 dotenv.config();
 
