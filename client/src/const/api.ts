@@ -3,6 +3,6 @@ type ApiConfig = {
 };
 
 export const API: ApiConfig = {
-  baseUrl: "http://localhost:3001",
-  // baseUrl: "http://localhost:3001",
+  baseUrl: "https://fullstack-task-subhankar.onrender.com",
+  // baseUrl: "http://localhost:3001", // Uncomment for local development
 };
